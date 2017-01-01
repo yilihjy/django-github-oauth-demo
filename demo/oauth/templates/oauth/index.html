@@ -1,0 +1,7 @@
+{% if result %}
+{% for k,v in result.items%}
+<p>{{k}}:{{v}}</p>
+{% endfor%}
+{% else %}
+<a href="{% url 'redirect'%}">use github login</a>
+{% endif%}
